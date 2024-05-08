@@ -1,9 +1,18 @@
+:root {
+  --primary-colour: rgb(70, 5, 61);
+  --secondary-colour: rgb(211, 96, 115);
+  --third-colour: rgb(36, 43, 1);
+  --primary-gradient: linear-gradient(to top, #e9c3cd 0%, #665668 100%);
+}
+
 body {
   font-family: sans-serif;
   padding: 0 20px;
+  background: var(--primary-gradient);
 }
 
 h1 {
+  color: var(--primary-colour);
   text-align: center;
   font-weight: 900;
   margin: 0;
@@ -11,9 +20,11 @@ h1 {
   line-height: 48px;
 }
 
-h1 h2,
 h3 {
-  color: #231d3c;
+  color: var(--secondary-colour);
+}
+p {
+  color: var(--third-colour);
 }
 
 .logo {
